@@ -1,5 +1,4 @@
 #React app- Reminder
-My first react app
 
 #Run program(in development mode)
 1. Make sure node.js and npm is installed on your computer
