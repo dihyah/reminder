@@ -1,13 +1,13 @@
 import Task from './Task'
 
-const Tasks = ({ tasks, onDelete, onToggle }) => {
+const List = ({ list, onDelete, onToggle }) => {
 
     return (
-        //setTasks([...tasks, {}])
+        //setList([...list, {}])
         <>
-            {tasks.map((task) => (
+            {list.map((task, index) => (
                 <Task 
-                    key={task.id} 
+                    key={index}
                     task={task} 
                     onDelete={onDelete} 
                     onToggle={onToggle} 
@@ -17,4 +17,4 @@ const Tasks = ({ tasks, onDelete, onToggle }) => {
     )
 }
 
-export default Tasks
+export default List
